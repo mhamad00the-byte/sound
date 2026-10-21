@@ -9,6 +9,7 @@ sdk_version: 5.25.2
 app_file: app.py
 pinned: false
 license: gpl-2.0
+gradio
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
