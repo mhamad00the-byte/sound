@@ -5,6 +5,18 @@ import tempfile
 import os
 import uuid
 
+import streamlit as st
+import gradio as gr
+
+# ئەم بەشەی خوارەوە بۆ پیشاندانی Gradio لەسەر Streamlitـە
+with gr.Blocks() as demo:
+    pass # یان ناوی ڕووکارەکەی خۆت بنووسە
+
+# داگیرساندنی ڕاستەوخۆ لە Streamlit
+import streamlit.components.v1 as components
+demo.launch(prevent_thread_lock=True)
+components.iframe(f"http://localhost:7860", height=800)
+
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output_audio")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
